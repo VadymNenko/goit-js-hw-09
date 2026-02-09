@@ -1,0 +1,35 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  max-width: 1128px;
+  gap: 24px;
+  padding: 24px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.gallery-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.sl-wrapper {
+  background-color: #2e2f42cc;
+}
+
+body .sl-wrapper .sl-close,
+body .sl-wrapper .sl-navigation button,
+body .sl-wrapper .sl-counter {
+  color: #fff;
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
